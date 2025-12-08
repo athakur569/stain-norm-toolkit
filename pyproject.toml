@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "stain-norm-toolkit"
+version = "0.1.0"
+description = "H&E stain normalization: Macenko, Reinhard, Vahadane with benchmarking"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [{name = "Abhishek Thakur", email = "a.thakur5690@gmail.com"}]
+requires-python = ">=3.9"
+keywords = ["digital-pathology", "stain-normalization", "H&E", "computational-pathology"]
+dependencies = [
+    "numpy>=1.24.0",
+    "opencv-python>=4.8.0",
+    "scikit-learn>=1.3.0",
+    "Pillow>=10.0.0",
+    "pandas>=2.0.0",
+    "tqdm>=4.65.0",
+    "matplotlib>=3.7.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
